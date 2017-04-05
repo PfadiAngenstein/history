@@ -34,6 +34,12 @@ h1, h2 {
   font-weight: bold;
 }
 
+footer {
+  margin: 1em 0 1em 0;
+  text-align: center;
+}
+
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
