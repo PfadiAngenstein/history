@@ -288,6 +288,17 @@ header h1 {
   border-radius: 0.25em;
 }
 
+.cd-timeline-content a {
+  background: linear-gradient(#fff, #fff) no-repeat scroll 0 95% / 0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 95% / 0.05em 1px, rgba(0, 0, 0, 0) linear-gradient(#FFA400, #FFA400) repeat-x scroll 0 95% / 1px 1px;
+  color: #333;
+  text-decoration: none;
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+}
+
+.cd-timeline-content a:hover {
+  color: #FFA400;
+}
+
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
@@ -500,4 +511,12 @@ header h1 {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+
+
+
+::selection {
+  color: #fff;
+  background-color: #333;
 }
