@@ -64,26 +64,49 @@ Main components
 
 -------------------------------- */
 header {
-  height: 200px;
-  line-height: 200px;
+  padding: 0.5rem 0 0.5rem 0;
+  min-height: 100px;
   text-align: center;
   background: #ffeb3b;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
 header h1 {
   color: #333;
-  font-size: 18px;
-  font-size: 1.25rem;
+  font-size: 2rem;
+  letter-spacing: -0.05em;
 }
+
+header h1 img {
+  height: 80px;
+   vertical-align: middle;
+}
+
 @media only screen and (min-width: 1170px) {
   header {
-    height: 300px;
-    line-height: 300px;
+    max-height: 200px;
   }
   header h1 {
     font-size: 3rem;
   }
+
+  header h1 img {
+    height: 160px;
+    vertical-align: middle;
+  }
+
 }
+
+@media only screen and (max-width: 480px) {
+  
+  header h1 {
+    padding: 1em 0; 
+  }
+
+  header h1 img {
+    display: none;
+  }
+}
+
 #cd-timeline {
   position: relative;
   padding: 2em 0;
@@ -254,6 +277,7 @@ header h1 {
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24);
+  font-family: "PT Serif", serif;
 }
 .cd-timeline-content:after {
   content: "";
@@ -262,6 +286,7 @@ header h1 {
 }
 .cd-timeline-content h2 {
   color: #303e49;
+  font-family: "PT Sans", sans-serif;  
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
@@ -313,6 +338,12 @@ header h1 {
   float: left;
   padding: .8em 0;
   opacity: .7;
+  font-family: "PT Sans", sans-serif;
+}
+@media only screen and (max-width: 1170px) {
+  .cd-timeline-content .cd-date {
+    display: none;
+  }
 }
 .cd-timeline-content::before {
   content: '';
