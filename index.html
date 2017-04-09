@@ -40,7 +40,7 @@
 	</header>
 
 	<section class="intro">
-	<a href="#gruendung" class="button">Zur Gründung springen</a>
+	<a href="#gruendung" id="link-gruendung" class="button">Zur Gründung springen</a>
 	</section>
 
 	<section id="cd-timeline" class="cd-container">
@@ -153,5 +153,15 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+	$(document).ready(function(){
+		$('a[href*=#]').click(function(event){
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    event.preventDefault();
+		});
+	});
+</script>
 </body>
 </html>

@@ -554,13 +554,13 @@ header h1 img {
 
 .intro {
   width: 100%;
+  padding: 0 0.5rem;
 }
 
 a.button {
   display: block;
   padding: 1rem 3.5rem;
-  width: 50%;
-  max-width: 300px;
+  width: 300px;
   text-align: center;
   margin: 1rem auto !important;
   background-color: #333;
@@ -574,4 +574,10 @@ a.button {
 
 a.button:hover {
   background: #222222;
+}
+
+@media only screen and (max-width: 768px) {
+  a.button {
+    width: 100%;
+  }
 }
