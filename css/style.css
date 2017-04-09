@@ -267,6 +267,7 @@ header h1 img {
     font-family: "PT Sans", sans-serif;
 }
 .cd-timeline-content p,
+.cd-timeline-content li,
 .cd-timeline-content .cd-read-more,
 .cd-timeline-content .cd-date {
     font-size: 13px;
@@ -532,6 +533,7 @@ a.button {
     border: none;
     transition: all .2s ease;
     font-family: "PT Sans", sans-serif;
+    font-weight: bold;
     box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
 a.button:hover {
