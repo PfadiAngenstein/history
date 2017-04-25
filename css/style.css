@@ -282,10 +282,12 @@ header h1 img {
 .cd-timeline-content img {
     margin: 1em 0;
     line-height: 1.6;
+    font-size: 1rem;
 }
 .cd-timeline-content ul li {
     list-style: disc;
     margin-left: 1rem;
+    font-size: 1rem;
 }
 .cd-timeline-content p img,
 .cd-timeline-content img {
@@ -336,7 +338,8 @@ header h1 img {
         font-size: 20px;
         font-size: 1.25rem;
     }
-    .cd-timeline-content p {
+    .cd-timeline-content p,
+    .cd-timeline-content li {
         font-size: 16px;
         font-size: 1rem;
     }
