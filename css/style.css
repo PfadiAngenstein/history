@@ -69,6 +69,7 @@ header h1 {
     font-size: 2rem;
     letter-spacing: -0.05em;
 }
+
 header h1 img {
     height: 80px;
     vertical-align: middle;
@@ -522,13 +523,16 @@ header h1 img {
     color: #fff;
     background-color: #333;
 }
+.clear {
+    clear: both;
+}
 .intro {
     width: 100%;
     padding: 0 0.5rem;
 }
 a.button {
     display: block;
-    padding: 1rem 3.5rem;
+    padding: 1rem 3rem;
     width: 300px;
     text-align: center;
     margin: 1rem auto !important;
@@ -544,8 +548,22 @@ a.button {
 a.button:hover {
     background: #222222;
 }
+
 @media only screen and (max-width: 768px) {
     a.button {
         width: 100%;
     }
+}
+
+.go-back-home{
+    height: 40px;
+    padding: 4px;
+    position: fixed;
+    top: 0;
+    right: 20px;
+}
+
+.go-back-home img {
+    height: 100%;
+    width: auto;
 }
