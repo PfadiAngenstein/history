@@ -660,3 +660,32 @@ a.button:hover {
   height: 100%;
   width: auto;
 }
+
+.clear {
+  clear: both;
+}
+
+.float-left {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.float-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .float-left,
+  .float-right {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+
+  .center-on-mobile {
+    text-align: center;
+  }
+}
