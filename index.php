@@ -279,7 +279,8 @@
 
 
     <footer>
-        <p><a href="https://www.pfadiangenstein.ch">www.pfadiangenstein.ch</a></p>
+        <p class="float-left center-on-mobile">&copy; 2016 - <?php echo date("Y"); ?> Pfadi Angenstein</p>
+        <p class="float-right center-on-mobile"><a href="https://www.pfadiangenstein.ch">www.pfadiangenstein.ch</a></p>
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
